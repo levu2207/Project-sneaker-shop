@@ -31,7 +31,6 @@ const store = configureStore({
   middleware: [thunk, createStateSyncMiddleware(syncConfig)],
 });
 initMessageListener(store);
-// initStateWithPrevTab(store);
 
 export default store;
 export const persistor = persistStore(store);
